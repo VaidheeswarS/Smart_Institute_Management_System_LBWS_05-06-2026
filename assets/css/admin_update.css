@@ -1,0 +1,62 @@
+
+#up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#up form#updateform {
+    width: 500px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+#up table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#up th {
+    text-align: left;
+    padding: 10px;
+    width: 30%;
+    vertical-align: top;
+    color: #333;
+}
+
+#up td {
+    padding: 10px;
+}
+
+#up input[type="text"],
+#up input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#up input[readonly] {
+    background: #f3f3f3;
+    cursor: not-allowed;
+}
+
+#up input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#up input[type="submit"]:hover {
+    background: #3a57d6;
+}

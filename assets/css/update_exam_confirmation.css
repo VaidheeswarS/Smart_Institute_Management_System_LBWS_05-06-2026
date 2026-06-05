@@ -1,0 +1,93 @@
+
+#upd-c-exam {
+    padding: 20px;
+}
+
+/* ===== FORM CARD (same as add_course form) ===== */
+#upd-c-exam #update_exam_Confim_form {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== TITLE ===== */
+#upd-c-exam #update_exam_Confim_form::before {
+    content: "Select Exam to Update";
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(28,122,173);
+    margin-bottom: 20px;
+}
+
+/* ===== SELECT ===== */
+#upd-c-exam #update_exam_Confim_form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+/* focus */
+#upd-c-exam #update_exam_Confim_form select:focus {
+    border-color: rgb(28,122,173);
+    box-shadow: 0 0 5px rgba(28,122,173,.3);
+}
+
+/* ===== BUTTON WRAPPER ===== */
+#upd-c-exam #UP-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* ===== BUTTONS ===== */
+#upd-c-exam #update_exam_Confim_form input[type="submit"],
+#upd-c-exam #update_exam_Confim_form input[type="button"] {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* hover */
+#upd-c-exam #update_exam_Confim_form input[type="submit"]:hover,
+#upd-c-exam #update_exam_Confim_form input[type="button"]:hover {
+    background: white;
+    color: rgb(28,122,173);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    #upd-c-exam #update_exam_Confim_form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #upd-c-exam #UP-btn {
+        flex-direction: column;
+    }
+}

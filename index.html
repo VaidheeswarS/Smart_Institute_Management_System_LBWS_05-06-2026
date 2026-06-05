@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Document</title>
+
+
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                font-family:"Google Sans",sans-serif;
+                background:#f5f5f5;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                min-height:100vh;
+            }
+
+            form{
+                width:380px;
+                background:white;
+                padding:30px;
+                border-radius:12px;
+                border:2px solid rgb(28, 122, 173);
+                box-shadow:0 10px 25px rgba(0,0,0,.1);
+            }
+
+            form::before{
+                content:"Login";
+                display:block;
+                text-align:center;
+                font-size:28px;
+                font-weight:bold;
+                color: rgb(28, 122, 173);
+                margin-bottom:25px;
+            }
+
+            #email,
+            #password{
+                width:100%;
+                padding:12px;
+                margin-bottom:15px;
+                box-sizing:border-box;
+                border:1px solid rgb(28,122,173);
+                border-radius:6px;
+                outline:none;
+            }
+
+            #email:focus{
+                border-color:rgb(28,122,173);
+                box-shadow:0 0 5px rgba(28,122,173,.4);
+            }
+
+            input[type="submit"]{
+                width:100%;
+                padding:12px;
+                border: 1px solid;
+                border-radius:6px;
+                background:rgb(28,122,173);
+                color:white;
+                font-weight:bold;
+                cursor:pointer;
+                transition:.3s;
+            }
+
+            input[type="submit"]:hover{
+                background:white;
+                color:rgb(28,122,173);
+                border-color: rgb(28,122,173);
+            }
+
+            p{
+                text-align:center;
+                font-size:13px;
+                margin:12px 0;
+            }
+
+            a{
+                text-decoration:none;
+                color:rgb(28,122,173);
+            }
+
+            #fb-button,
+            #g-button{
+                width:100%;
+                padding:12px;
+                border-radius:6px;
+                border:1px solid rgb(28,122,173);
+                background:white;
+                color:rgb(28,122,173);
+                font-weight:bold;
+                cursor:pointer;
+                margin-top:10px;
+                transition:.3s;
+            }
+
+            #fb-button:hover,
+            #g-button:hover{
+                background:rgb(28,122,173);
+                color:white;
+            }
+
+            .social{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                gap:10px;
+                margin-top:10px;
+            }
+
+            .fa-facebook,
+            .fa-google{
+                color:rgb(28,122,173);
+                margin-right:8px;
+            }
+            .password-container{
+                position:relative;
+                width:100%;
+                margin-bottom:15px;
+            }
+
+            .password-container input{
+                width:100%;
+                padding:9px;
+                padding-right:40px; 
+                box-sizing:border-box;
+                border:1px solid rgb(28,122,173);
+                border-radius:6px;
+                outline:none;
+            }
+
+            #eye{
+                position:absolute;
+                right:12px;
+                top:40%;
+                transform:translateY(-50%);
+                cursor:pointer;
+                color:gray;
+            }
+        </style>
+    </head>
+
+    <body>
+    
+        <form>
+
+            <input type="email" name="email"  id="email" placeholder="Enter a registered email">
+            
+            <div class="password-container">
+                <input type="password" class="form-input" id="password" name="password" placeholder="Please enter your password" required>
+                <i id="eye" class="fa-solid fa-eye-slash eye"></i>
+            </div>
+
+            <input type="submit">
+            <p style="text-align: center;"><a href="" target="_blank" id="forget">Forget password ?</a></p>    
+            <br>
+            <p>Don't have an account? <a href="register.php" target="_self">Signup</a></p>
+                    <!-- <br> -->
+            <p>Or</p>
+            
+            <button type="button" id="fb-button">
+                <i class="fa-brands fa-facebook"></i>
+                Login with Facebook
+            </button>
+
+            <button type="button" id="g-button">
+                <i class="fa-brands fa-google"></i>
+                Login with Google
+            </button>
+        </form>
+        
+
+
+    <script src="assets/scripts/jquery-4.0.0.min.js">
+
+    </script>
+
+    <script src="assets/scripts/index.js">
+
+    </script>
+
+    </body>
+</html>

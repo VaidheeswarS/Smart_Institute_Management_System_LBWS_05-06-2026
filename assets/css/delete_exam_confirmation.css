@@ -1,0 +1,93 @@
+
+#del-exam-c {
+    padding: 20px;
+}
+
+/* ===== FORM CARD (same as course/add forms) ===== */
+#del-exam-c #delete_exam_Confim_form {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== TITLE ===== */
+#del-exam-c #delete_exam_Confim_form::before {
+    content: "Confirm Delete Exam";
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(28,122,173);
+    margin-bottom: 20px;
+}
+
+/* ===== SELECT ===== */
+#del-exam-c #delete_exam_Confim_form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+/* focus */
+#del-exam-c #delete_exam_Confim_form select:focus {
+    border-color: rgb(28,122,173);
+    box-shadow: 0 0 5px rgba(28,122,173,.3);
+}
+
+/* ===== BUTTON WRAPPER ===== */
+#del-exam-c #DEL-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* ===== BUTTONS ===== */
+#del-exam-c #delete_exam_Confim_form input[type="submit"],
+#del-exam-c #delete_exam_Confim_form input[type="button"] {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* hover */
+#del-exam-c #delete_exam_Confim_form input[type="submit"]:hover,
+#del-exam-c #delete_exam_Confim_form input[type="button"]:hover {
+    background: white;
+    color: rgb(28,122,173);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    #del-exam-c #delete_exam_Confim_form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #del-exam-c #DEL-btn {
+        flex-direction: column;
+    }
+}

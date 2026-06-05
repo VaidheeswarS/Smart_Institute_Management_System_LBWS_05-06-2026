@@ -1,0 +1,94 @@
+
+#student{
+    padding:20px;
+}
+
+#student #user-form{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    overflow-x:auto;
+}
+
+#student #user-form table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#student #user-form th{
+    background:rgb(28,122,173);
+    color:white;
+    padding:12px;
+    text-align:left;
+    font-size:15px;
+}
+
+#student #user-form td{
+    padding:12px;
+    border-bottom:1px solid #e5e5e5;
+    font-size:14px;
+}
+
+#student #user-form tr:hover{
+    background:#f8fbfd;
+}
+
+#student input[type="text"].status{
+    width:90px;
+    padding:8px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius:6px;
+    background:#f7f7f7;
+    color:#333;
+}
+
+#student input[type="submit"].status{
+    padding:8px 14px;
+    background:rgb(28,122,173);
+    color:white;
+    border:1px solid rgb(28,122,173);
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#student input[type="submit"].status:hover{
+    background:white;
+    color:rgb(28,122,173);
+}
+
+#student .delete{
+    padding:8px 14px;
+    background:#dc3545;
+    color:white;
+    border:1px solid #dc3545;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#student .delete:hover{
+    background:white;
+    color:#dc3545;
+}
+
+#student #user-form td[colspan]{
+    text-align:center;
+    font-weight:600;
+    color:#777;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    #student #user-form{
+        padding:10px;
+    }
+
+    #student #user-form th,
+    #student #user-form td{
+        padding:8px;
+        font-size:13px;
+    }
+}

@@ -1,0 +1,78 @@
+
+#my-exam{
+    width: 100%;
+    padding: 25px;
+    background-color: #f4f6f9;
+}
+
+#my-exam #exam-form{
+    width: 100%;
+}
+
+#my-exam #exams-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Exam Card */
+#my-exam .exam{
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#my-exam .exam:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Subject */
+#my-exam .sub{
+    font-size: 20px;
+    color: rgb(28,122,173);
+    font-weight: 600;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 8px;
+}
+
+/* Exam Name */
+#my-exam .exam p.exam{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Date */
+#my-exam .date{
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Empty state */
+#my-exam > form > div > p{
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    #my-exam{
+        padding: 10px;
+    }
+
+    #my-exam #exams-list{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

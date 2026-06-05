@@ -1,0 +1,84 @@
+#add-exam {
+    padding: 20px;
+}
+
+#add-exam #add_exams_form {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-exam #add_exams_form::before {
+    content: "Add New Exam";
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(28,122,173);
+    margin-bottom: 20px;
+}
+
+#add-exam #add_exams_form select,
+#add-exam #add_exams_form input[type="text"],
+#add-exam #add_exams_form input[type="date"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+#add-exam #add_exams_form input:focus,
+#add-exam #add_exams_form select:focus {
+    border-color: rgb(28,122,173);
+    box-shadow: 0 0 5px rgba(28,122,173,.3);
+}
+
+#add-exam #add_exams_form input[type="submit"],#add-exam #add_exams_form input[type="button"] {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 12px;
+
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#add-exam #add_exams_form input[type="submit"]:hover ,#add-exam #add_exams_form input[type="button"]:hover{
+    background: white;
+    color: rgb(28,122,173);
+}
+
+
+#btns{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+@media(max-width:768px){
+
+    #add-exam #add_exams_form {
+        width: 100%;
+        padding: 15px;
+    }
+}

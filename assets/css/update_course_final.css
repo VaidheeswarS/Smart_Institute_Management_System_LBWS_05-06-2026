@@ -1,0 +1,97 @@
+
+#u {
+    padding: 20px;
+}
+
+#u #update_course {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* form layout */
+#u .course {
+    display: flex;
+    flex-direction: column;
+}
+
+/* labels */
+#u label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(28,122,173);
+}
+
+/* inputs */
+#u input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+/* focus */
+#u input[type="text"]:focus {
+    border-color: rgb(28,122,173);
+    box-shadow: 0 0 5px rgba(28,122,173,.3);
+}
+
+/* button container */
+#u #upc {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+/* buttons */
+#u input[type="submit"] {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* hover */
+#u input[type="submit"]:hover {
+    background: white;
+    color: rgb(28,122,173);
+}
+
+/* Back button optional */
+#u #back {
+    background: rgb(28,122,173);
+    color: white;
+}
+
+/* responsive */
+@media(max-width:768px) {
+
+    #u {
+        padding: 10px;
+    }
+
+    #u #update_course {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #u input[type="submit"] {
+        width: 45%;
+    }
+}

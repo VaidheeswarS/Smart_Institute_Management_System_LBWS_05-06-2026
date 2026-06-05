@@ -1,0 +1,90 @@
+#add-c{
+    padding:20px;
+}
+
+#add-c #add_course_form{
+    width:450px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+#add-c #add_course_form::before{
+    content:"Add New Course";
+    display:block;
+    text-align:center;
+    font-size:24px;
+    font-weight:600;
+    color:rgb(28,122,173);
+    margin-bottom:20px;
+}
+
+#add-c input[type="text"],#add-c #btn{
+    width:100%;
+    box-sizing:border-box;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid rgb(28,122,173);
+    border-radius:6px;
+    outline:none;
+    font-size:14px;
+    background:white;
+}
+#add-c input[type="text"]{
+    
+    border:1px solid rgb(28,122,173);
+    
+}
+#add-c #btn{
+    border:1px solid white;
+   
+}
+
+#add-c input[type="text"]:focus{
+    border-color:rgb(28,122,173);
+    box-shadow:0 0 5px rgba(28,122,173,.3);
+}
+
+#add-c #btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#add-c input[type="submit"], #add-c #back{
+    width:40%;
+    box-sizing:border-box;
+    padding:12px;
+    border:1px solid rgb(28,122,173);
+    border-radius:6px;
+    background:rgb(28,122,173);
+    color:white;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#add-c input[type="submit"]:hover, #add-c #back:hover{
+    background:white;
+    color:rgb(28,122,173);
+}
+
+@media(max-width:768px){
+
+    #add-c{
+        padding:10px;
+    }
+
+    #add-c #add_course_form{
+        width:100%;
+        padding:15px;
+    }
+
+}

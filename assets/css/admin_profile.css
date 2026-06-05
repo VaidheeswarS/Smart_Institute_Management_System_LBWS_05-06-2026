@@ -1,0 +1,94 @@
+.profile-page #editform{
+    max-width:750px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.profile-page table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.profile-page th, .profile-page td{
+    padding:12px 10px;
+    text-align:left;
+    border-bottom:1px solid #eee;
+}
+
+.profile-page th{
+    width:180px;
+    color:#333;
+    font-weight:600;
+}
+
+.profile-page input[type="text"],
+.profile-page input[type="password"]{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+    background:#f9f9f9;
+}
+
+.profile-page input[type="text"]:focus,
+.profile-page input[type="password"]:focus{
+    border-color:rgb(28,122,173);
+    box-shadow:0 0 5px rgba(28,122,173,0.3);
+}
+
+.profile-page td input[type="submit"]{
+    padding:10px 15px;
+    margin-right:10px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.profile-page td input[name="edit"]{
+    background:rgb(28,122,173);
+    color:white;
+    border: 1px solid;
+    
+}
+
+.profile-page td input[name="edit"]:hover{
+    background:white;
+    color:rgb(28,122,173);
+    border-color: rgb(28,122,173);
+}
+
+.profile-page td input[name="delete"]{
+    background:#e74c3c;
+    color:white;
+    border: 1px solid;
+
+}
+
+.profile-page td input[name="delete"]:hover{
+    background:white;
+    color:#e74c3c;
+    border-color: #e74c3c;
+}
+
+.profile-page td input[name="change_password"]{
+    background:#f39c12;
+    color:white;
+    border: 1px solid;
+
+}
+
+.profile-page td input[name="change_password"]:hover{
+    background:white;
+    color:#f39c12;
+    border-color:#f39c12;
+}
+
+.profile-page #box{
+    margin-top:15px;
+}

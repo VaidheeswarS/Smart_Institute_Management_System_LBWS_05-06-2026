@@ -1,0 +1,123 @@
+
+#trainer{
+    padding:20px;
+}
+
+/* CONTAINER WITH SCROLL */
+#trainer #staff-form{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+    overflow-x:auto;
+    max-width:100%;
+}
+
+/* TABLE */
+#trainer #staff-form table{
+    width:100%;
+    min-width:950px; /* IMPORTANT for horizontal scroll */
+    border-collapse:collapse;
+}
+
+/* HEADER */
+#trainer #staff-form th{
+    background:rgb(28,122,173);
+    color:white;
+    padding:12px;
+    text-align:left;
+    font-size:15px;
+    white-space:nowrap;
+}
+
+/* CELLS */
+#trainer #staff-form td{
+    padding:12px;
+    border-bottom:1px solid #e5e5e5;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+/* ROW HOVER */
+#trainer #staff-form tr:hover{
+    background:#f8fbfd;
+}
+
+/* STATUS TEXT BOX */
+#trainer input[type="text"].status{
+    width:90px;
+    padding:8px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius:6px;
+    background:#f7f7f7;
+    color:#333;
+}
+
+/* STATUS BUTTON */
+#trainer input[type="submit"].status{
+    padding:8px 14px;
+    background:rgb(28,122,173);
+    color:white;
+    border:1px solid rgb(28,122,173);
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#trainer input[type="submit"].status:hover{
+    background:white;
+    color:rgb(28,122,173);
+}
+
+/* DELETE BUTTON */
+#trainer .delete{
+    padding:8px 14px;
+    background:#dc3545;
+    color:white;
+    border:1px solid #dc3545;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#trainer .delete:hover{
+    background:white;
+    color:#dc3545;
+}
+
+/* EMPTY ROW */
+#trainer #staff-form td[colspan]{
+    text-align:center;
+    font-weight:600;
+    color:#777;
+    padding:20px;
+}
+
+/* SCROLLBAR STYLE */
+#trainer #staff-form::-webkit-scrollbar{
+    height:6px;
+}
+
+#trainer #staff-form::-webkit-scrollbar-thumb{
+    background:#bbb;
+    border-radius:10px;
+}
+
+#trainer #staff-form::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    #trainer #staff-form{
+        padding:10px;
+    }
+
+    #trainer #staff-form th,
+    #trainer #staff-form td{
+        padding:8px;
+        font-size:13px;
+    }
+}

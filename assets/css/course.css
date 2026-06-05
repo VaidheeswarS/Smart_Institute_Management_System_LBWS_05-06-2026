@@ -1,0 +1,133 @@
+
+#course{
+    padding:20px;
+}
+
+#course #course-form{
+    width:100%;
+}
+
+#course #cou-bar{
+    background:white;
+    padding:15px 20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#course #cou-bar h2{
+    color:rgb(28,122,173);
+    font-size:24px;
+}
+
+#course #cou-bar ul{
+    list-style:none;
+    display:flex;
+    gap:10px;
+}
+
+#course #cou-bar li{
+    display:inline-block;
+}
+
+#course #Add,
+#course #Delete,
+#course #Update{
+    padding:10px 15px;
+    border:1px solid rgb(28,122,173);
+    border-radius:6px;
+    background:rgb(28,122,173);
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#course #Add:hover,
+#course #Delete:hover,
+#course #Update:hover{
+    background:white;
+    color:rgb(28,122,173);
+}
+
+#course #courses-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:20px;
+}
+
+#course .course{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+#course .course:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+#course .c-dept{
+    color:rgb(28,122,173);
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+#course .c-about{
+    color:#555;
+    line-height:1.5;
+    margin-bottom:15px;
+
+
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+#course .course {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#course .course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+#course .course-detail {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+@media(max-width:768px){
+
+    #course #cou-bar{
+        flex-direction:column;
+        gap:15px;
+        align-items:flex-start;
+    }
+
+    #course #cou-bar ul{
+        flex-wrap:wrap;
+    }
+
+    #course #courses-list{
+        grid-template-columns:1fr;
+    }
+}

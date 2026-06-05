@@ -1,0 +1,66 @@
+
+#view-c {
+    padding: 20px;
+}
+
+#view-c #cd-form {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title */
+#view-c h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(28,122,173);
+    margin-bottom: 15px;
+}
+
+/* Text content */
+#view-c p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Back button container feel */
+#view-c #back {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* hover */
+#view-c #back:hover {
+    background: white;
+    color: rgb(28,122,173);
+}
+
+/* responsive */
+@media(max-width:768px) {
+
+    #view-c {
+        padding: 10px;
+    }
+
+    #view-c #cd-form {
+        width: 100%;
+        padding: 15px;
+    }
+}

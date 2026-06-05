@@ -1,0 +1,116 @@
+
+#exam {
+    padding: 20px;
+}
+
+#exam #exam-form {
+    width: 100%;
+}
+
+/* ===== TOP BAR (same as course) ===== */
+#exam #exam-bar {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#exam #exam-bar h2 {
+    color: rgb(28,122,173);
+    font-size: 24px;
+}
+
+#exam #exam-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* ===== BUTTONS (same as course) ===== */
+#exam #Add,
+#exam #Delete,
+#exam #Update {
+    padding: 10px 15px;
+    border: 1px solid rgb(28,122,173);
+    border-radius: 6px;
+    background: rgb(28,122,173);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#exam #Add:hover,
+#exam #Delete:hover,
+#exam #Update:hover {
+    background: white;
+    color: rgb(28,122,173);
+}
+
+/* ===== GRID (same as course) ===== */
+#exam #exams-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ===== CARD (EXACT SAME AS COURSE .course) ===== */
+#exam .exam {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* hover same as course */
+#exam .exam:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== TITLE (same as c-dept) ===== */
+#exam .sub {
+    color: rgb(28,122,173);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* ===== TEXT (same as c-about) ===== */
+#exam .exam p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* ===== PUSH DATE LIKE COURSE DETAIL BUTTON AREA ===== */
+#exam .date {
+    margin-top: auto;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    #exam #exam-bar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    #exam #exam-bar ul {
+        flex-wrap: wrap;
+    }
+
+    #exam #exams-list {
+        grid-template-columns: 1fr;
+    }
+}
